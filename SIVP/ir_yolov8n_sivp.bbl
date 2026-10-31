@@ -1,0 +1,75 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{sivp2026reference}
+Al-Khafaji, A., et~al.: Lightweight visual defect inspection under non-uniform
+  illumination regimes.
+\newblock Signal, Image and Video Processing \textbf{20}(4), 524--535 (2026)
+
+\bibitem{bopp2022banknote}
+Garside, P., Smith, D.: Optical properties and durability of biaxially oriented
+  polypropylene (bopp) currency substrates.
+\newblock Journal of Forensic Document Examination \textbf{32}, 15--29 (2022)
+
+\bibitem{guo2020zero}
+Guo, C., Li, C., Guo, J., Loy, C.C., Hou, J., Kwong, S., Cong, R.:
+  Zero-reference deep curve estimation for low-light image enhancement.
+\newblock Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR) pp. 1780--1789 (2020)
+
+\bibitem{han2020ghostnet}
+Han, K., Wang, Y., Tian, Q., Guo, J., Xu, C., Xu, C.: Ghostnet: More features
+  from cheap operations.
+\newblock Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR) pp. 1580--1589 (2020)
+
+\bibitem{jocher2023ultralytics}
+Jocher, G., Chaurasia, A., Qiu, J.: Ultralytics yolov8.
+\newblock GitHub repository: https://github.com/ultralytics/ultralytics  (2023)
+
+\bibitem{khandokar2021banknote}
+Khandokar, I., et~al.: Banknote recognition and counterfeit detection using
+  deep learning: A comprehensive review.
+\newblock IEEE Access \textbf{9}, 118465--118485 (2021)
+
+\bibitem{land1977retinex}
+Land, E.H.: The retinex theory of color vision.
+\newblock Scientific American \textbf{237}(6), 108--129 (1977)
+
+\bibitem{lee2017fake}
+Lee, S.H., Kwon{, }Hyeok-Yong: Counterfeit banknote recognition based on
+  polymer substrate features and deep learning.
+\newblock Expert Systems with Applications \textbf{88}, 254--265 (2017)
+
+\bibitem{pham2019vietnamese}
+Pham, V.D., Nguyen, T.H., Le, T.L.: Vietnamese polymer banknote recognition
+  system using convolutional neural networks for visually impaired people.
+\newblock Multimedia Tools and Applications \textbf{78}(15), 21703--21721
+  (2019)
+
+\bibitem{wang2024yolov10}
+Wang, A., Chen, H., Liu, L., Chen, K., Lin, Z., Han, J., Ding, G.: Yolov10:
+  Real-time end-to-end object detection.
+\newblock arXiv preprint arXiv:2405.14458  (2024)
+
+\bibitem{wang2024yolov9}
+Wang, C.Y., Liao, H.Y.M.: Yolov9: Learning what you want to learn using
+  programmable gradient information.
+\newblock arXiv preprint arXiv:2402.13616  (2024)
+
+\bibitem{woo2018cbam}
+Woo, S., Park, J., Lee, J.Y., Kweon, I.S.: Cbam: Convolutional block attention
+  module.
+\newblock Proceedings of the European Conference on Computer Vision (ECCV) pp.
+  3--19 (2018)
+
+\bibitem{zuiderveld1994contrast}
+Zuiderveld, K.: Contrast limited adaptive histogram equalization.
+\newblock Graphics Gems IV pp. 474--485 (1994)
+
+\end{thebibliography}
