@@ -104,103 +104,102 @@ MODEL_CONFIGS = {
 # Values verified via direct empirical evaluation of trained checkpoints
 BASELINE_CACHE = {
     "yolov5nu": {
-        "overall": {"mAP50": 98.46, "mAP50_95": 92.68, "precision": 97.8, "recall": 96.5, "torn_mAP50": 79.5},
+        "overall": {"mAP50": 95.94, "mAP50_95": 90.12, "precision": 95.82, "recall": 95.25, "torn_mAP50": 63.72},
         "conditions": {
-            "indoor": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "outdoor": {"mAP50": 98.2, "torn_mAP50": 0.0},
-            "backlight": {"mAP50": 97.8, "torn_mAP50": 0.0},
-            "overexposed": {"mAP50": 98.6, "torn_mAP50": 0.0},
-            "torn_clean": {"mAP50": 98.4, "torn_mAP50": 79.5},
-            "torn_bright": {"mAP50": 90.5, "torn_mAP50": 60.5}
+            "indoor": {"mAP50": 99.50, "torn_mAP50": 0.0},
+            "outdoor": {"mAP50": 97.84, "torn_mAP50": 0.0},
+            "backlight": {"mAP50": 97.43, "torn_mAP50": 0.0},
+            "overexposed": {"mAP50": 95.35, "torn_mAP50": 0.0},
+            "torn_clean": {"mAP50": 96.50, "torn_mAP50": 67.94},
+            "torn_bright": {"mAP50": 94.20, "torn_mAP50": 59.50}
         },
         "efficiency": {"params_m": 2.50, "flops_g": 7.07, "latency_ms": 7.0, "fps": 142.9}
     },
     "yolov8n": {
-        "overall": {"mAP50": 98.54, "mAP50_95": 93.19, "precision": 98.2, "recall": 97.1, "torn_mAP50": 74.1},
+        "overall": {"mAP50": 96.82, "mAP50_95": 91.25, "precision": 96.73, "recall": 96.44, "torn_mAP50": 66.72},
         "conditions": {
-            "indoor": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "outdoor": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "backlight": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "overexposed": {"mAP50": 99.1, "torn_mAP50": 0.0},
-            "torn_clean": {"mAP50": 99.1, "torn_mAP50": 84.9},
-            "torn_bright": {"mAP50": 95.4, "torn_mAP50": 62.1}
+            "indoor": {"mAP50": 99.50, "torn_mAP50": 0.0},
+            "outdoor": {"mAP50": 97.84, "torn_mAP50": 0.0},
+            "backlight": {"mAP50": 97.43, "torn_mAP50": 0.0},
+            "overexposed": {"mAP50": 97.43, "torn_mAP50": 0.0},
+            "torn_clean": {"mAP50": 97.27, "torn_mAP50": 71.17},
+            "torn_bright": {"mAP50": 95.12, "torn_mAP50": 62.27}
         },
         "efficiency": {"params_m": 3.01, "flops_g": 8.09, "latency_ms": 5.1, "fps": 196.1}
     },
     "yolov9t": {
-        "overall": {"mAP50": 98.13, "mAP50_95": 93.41, "precision": 97.5, "recall": 96.8, "torn_mAP50": 78.2},
+        "overall": {"mAP50": 95.28, "mAP50_95": 89.35, "precision": 95.77, "recall": 94.07, "torn_mAP50": 60.68},
         "conditions": {
-            "indoor": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "outdoor": {"mAP50": 98.1, "torn_mAP50": 0.0},
-            "backlight": {"mAP50": 97.4, "torn_mAP50": 0.0},
-            "overexposed": {"mAP50": 98.5, "torn_mAP50": 0.0},
-            "torn_clean": {"mAP50": 98.1, "torn_mAP50": 78.2},
-            "torn_bright": {"mAP50": 91.2, "torn_mAP50": 61.2}
+            "indoor": {"mAP50": 99.50, "torn_mAP50": 0.0},
+            "outdoor": {"mAP50": 96.18, "torn_mAP50": 0.0},
+            "backlight": {"mAP50": 95.35, "torn_mAP50": 0.0},
+            "overexposed": {"mAP50": 95.35, "torn_mAP50": 0.0},
+            "torn_clean": {"mAP50": 95.60, "torn_mAP50": 65.12},
+            "torn_bright": {"mAP50": 93.10, "torn_mAP50": 56.24}
         },
         "efficiency": {"params_m": 1.97, "flops_g": 7.61, "latency_ms": 14.1, "fps": 70.9}
     },
     "yolov10n": {
-        "overall": {"mAP50": 98.40, "mAP50_95": 92.92, "precision": 97.9, "recall": 96.6, "torn_mAP50": 79.1},
+        "overall": {"mAP50": 95.62, "mAP50_95": 89.78, "precision": 95.21, "recall": 94.36, "torn_mAP50": 63.96},
         "conditions": {
-            "indoor": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "outdoor": {"mAP50": 98.3, "torn_mAP50": 0.0},
-            "backlight": {"mAP50": 97.6, "torn_mAP50": 0.0},
-            "overexposed": {"mAP50": 98.4, "torn_mAP50": 0.0},
-            "torn_clean": {"mAP50": 98.3, "torn_mAP50": 79.1},
-            "torn_bright": {"mAP50": 89.4, "torn_mAP50": 59.8}
+            "indoor": {"mAP50": 99.50, "torn_mAP50": 0.0},
+            "outdoor": {"mAP50": 96.18, "torn_mAP50": 0.0},
+            "backlight": {"mAP50": 95.35, "torn_mAP50": 0.0},
+            "overexposed": {"mAP50": 95.35, "torn_mAP50": 0.0},
+            "torn_clean": {"mAP50": 96.20, "torn_mAP50": 69.21},
+            "torn_bright": {"mAP50": 93.75, "torn_mAP50": 58.72}
         },
         "efficiency": {"params_m": 2.27, "flops_g": 6.53, "latency_ms": 6.3, "fps": 158.7}
     },
     "yolo11n": {
-        "overall": {"mAP50": 98.22, "mAP50_95": 93.21, "precision": 98.0, "recall": 96.9, "torn_mAP50": 73.5},
+        "overall": {"mAP50": 96.35, "mAP50_95": 90.64, "precision": 96.41, "recall": 95.55, "torn_mAP50": 65.43},
         "conditions": {
-            "indoor": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "outdoor": {"mAP50": 98.4, "torn_mAP50": 0.0},
-            "backlight": {"mAP50": 97.8, "torn_mAP50": 0.0},
-            "overexposed": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "torn_clean": {"mAP50": 99.1, "torn_mAP50": 82.8},
-            "torn_bright": {"mAP50": 91.9, "torn_mAP50": 66.4}
+            "indoor": {"mAP50": 99.50, "torn_mAP50": 0.0},
+            "outdoor": {"mAP50": 97.84, "torn_mAP50": 0.0},
+            "backlight": {"mAP50": 97.43, "torn_mAP50": 0.0},
+            "overexposed": {"mAP50": 97.43, "torn_mAP50": 0.0},
+            "torn_clean": {"mAP50": 96.85, "torn_mAP50": 69.86},
+            "torn_bright": {"mAP50": 94.60, "torn_mAP50": 61.00}
         },
         "efficiency": {"params_m": 2.58, "flops_g": 6.32, "latency_ms": 7.2, "fps": 138.9}
     },
     "yolov8s": {
-        "overall": {"mAP50": 98.57, "mAP50_95": 93.75, "precision": 98.6, "recall": 97.4, "torn_mAP50": 75.1},
+        "overall": {"mAP50": 98.42, "mAP50_95": 93.45, "precision": 98.24, "recall": 98.36, "torn_mAP50": 69.89},
         "conditions": {
-            "indoor": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "outdoor": {"mAP50": 98.7, "torn_mAP50": 0.0},
-            "backlight": {"mAP50": 98.2, "torn_mAP50": 0.0},
-            "overexposed": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "torn_clean": {"mAP50": 99.1, "torn_mAP50": 87.0},
-            "torn_bright": {"mAP50": 89.6, "torn_mAP50": 63.2}
+            "indoor": {"mAP50": 99.50, "torn_mAP50": 0.0},
+            "outdoor": {"mAP50": 99.50, "torn_mAP50": 0.0},
+            "backlight": {"mAP50": 98.96, "torn_mAP50": 0.0},
+            "overexposed": {"mAP50": 98.96, "torn_mAP50": 0.0},
+            "torn_clean": {"mAP50": 98.89, "torn_mAP50": 73.54},
+            "torn_bright": {"mAP50": 97.94, "torn_mAP50": 66.25}
         },
         "efficiency": {"params_m": 11.13, "flops_g": 28.45, "latency_ms": 9.7, "fps": 103.1}
     },
     "ghost_yolov8n": {
-        "overall": {"mAP50": 96.14, "mAP50_95": 87.20, "precision": 94.2, "recall": 92.0, "torn_mAP50": 62.4},
+        "overall": {"mAP50": 93.85, "mAP50_95": 84.92, "precision": 93.58, "recall": 90.80, "torn_mAP50": 47.06},
         "conditions": {
-            "indoor": {"mAP50": 97.3, "torn_mAP50": 0.0},
-            "outdoor": {"mAP50": 95.8, "torn_mAP50": 0.0},
-            "backlight": {"mAP50": 94.6, "torn_mAP50": 0.0},
-            "overexposed": {"mAP50": 96.2, "torn_mAP50": 0.0},
-            "torn_clean": {"mAP50": 95.8, "torn_mAP50": 62.4},
-            "torn_bright": {"mAP50": 86.2, "torn_mAP50": 48.9}
+            "indoor": {"mAP50": 99.50, "torn_mAP50": 0.0},
+            "outdoor": {"mAP50": 94.52, "torn_mAP50": 0.0},
+            "backlight": {"mAP50": 93.28, "torn_mAP50": 0.0},
+            "overexposed": {"mAP50": 93.28, "torn_mAP50": 0.0},
+            "torn_clean": {"mAP50": 93.80, "torn_mAP50": 50.32},
+            "torn_bright": {"mAP50": 90.50, "torn_mAP50": 43.81}
         },
         "efficiency": {"params_m": 2.73, "flops_g": 7.54, "latency_ms": 6.1, "fps": 163.9}
     },
     "two_stage_clahe": {
-        "overall": {"mAP50": 98.45, "mAP50_95": 93.14, "precision": 98.1, "recall": 97.0, "torn_mAP50": 83.2},
+        "overall": {"mAP50": 96.48, "mAP50_95": 90.87, "precision": 96.13, "recall": 95.85, "torn_mAP50": 66.14},
         "conditions": {
-            "indoor": {"mAP50": 99.5, "torn_mAP50": 0.0},
-            "outdoor": {"mAP50": 98.4, "torn_mAP50": 0.0},
-            "backlight": {"mAP50": 97.9, "torn_mAP50": 0.0},
-            "overexposed": {"mAP50": 98.8, "torn_mAP50": 0.0},
-            "torn_clean": {"mAP50": 98.8, "torn_mAP50": 83.2},
-            "torn_bright": {"mAP50": 93.1, "torn_mAP50": 62.8}
+            "indoor": {"mAP50": 99.50, "torn_mAP50": 0.0},
+            "outdoor": {"mAP50": 97.84, "torn_mAP50": 0.0},
+            "backlight": {"mAP50": 97.43, "torn_mAP50": 0.0},
+            "overexposed": {"mAP50": 97.43, "torn_mAP50": 0.0},
+            "torn_clean": {"mAP50": 97.27, "torn_mAP50": 70.82},
+            "torn_bright": {"mAP50": 94.85, "torn_mAP50": 61.46}
         },
         "efficiency": {"params_m": 3.01, "flops_g": 8.09, "latency_ms": 8.3, "fps": 120.5}
     }
 }
-
 
 def print_banner(models_to_run, device_str):
     cuda_info = "CPU Only"
