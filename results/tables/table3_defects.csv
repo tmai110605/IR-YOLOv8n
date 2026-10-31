@@ -1,0 +1,10 @@
+Model,Torn mAP@50 (Neutral),Torn mAP@50 (Glare Degradation),Defect Degradation (Δ)
+YOLOv5nu,80.5,65.8,14.7
+YOLOv8n,85.0,71.5,13.5
+YOLOv8s (Small),87.2,73.1,14.1
+YOLOv9t (GELAN),82.5,69.0,13.5
+YOLOv10n (NMS-free),83.8,70.5,13.3
+YOLO11n,87.5,74.2,13.3
+Ghost-YOLOv8n,83.0,69.8,13.2
+Two-Stage (CLAHE + YOLOv8n),85.8,73.0,12.8
+IR-YOLOv8n (Ours),93.1,88.2,4.9

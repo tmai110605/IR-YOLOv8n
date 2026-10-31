@@ -1,0 +1,10 @@
+Model,Indoor,Outdoor,Backlight,Overexposed (Glare),Torn (Clean),Torn (Bright),Glare Drop (Δ)
+YOLOv5nu,98.2,91.5,91.8,85.3,88.0,82.4,12.9
+YOLOv8n,99.5,94.2,95.2,90.1,92.5,87.1,9.4
+YOLOv8s (Small),99.7,95.8,96.5,91.2,94.8,89.3,8.5
+YOLOv9t (GELAN),98.9,93.1,94.0,88.2,91.0,85.5,10.7
+YOLOv10n (NMS-free),99.2,93.8,94.6,89.0,91.8,86.4,10.2
+YOLO11n,99.8,95.1,97.4,89.7,94.0,90.5,10.1
+Ghost-YOLOv8n,99.0,93.2,94.1,88.5,91.2,86.0,10.5
+Two-Stage (CLAHE + YOLOv8n),99.4,94.8,95.8,91.4,93.1,88.5,8.0
+IR-YOLOv8n (Ours),99.7,97.5,98.1,94.8,96.2,93.6,4.9

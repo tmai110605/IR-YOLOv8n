@@ -1,0 +1,21 @@
+\begin{table}[tb]
+\centering
+\caption{Comprehensive Comparison of Efficiency and Detection Accuracy Across Lightweight Architectures.}
+\label{tab:overall_performance}
+\scriptsize
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Model} & \textbf{Params (M)} & \textbf{FLOPs (G)} & \textbf{Latency (ms)} & \textbf{FPS} & \textbf{Pre. (\%)} & \textbf{Rec. (\%)} & \textbf{mAP@50} & \textbf{mAP@50-95} \\
+\midrule
+YOLOv5nu & 2.65 & 4.5 & 11.2 & 89.3 & 92.5 & 89.8 & 91.2 & 84.1 \\
+YOLOv8n & 3.01 & 8.2 & 14.5 & 69.0 & 95.1 & 93.4 & 94.8 & 88.2 \\
+YOLOv8s (Small) & 11.14 & 28.6 & 32.4 & 30.9 & 96.5 & 94.2 & 96.2 & 89.8 \\
+YOLOv9t (GELAN) & 2.13 & 5.8 & 10.8 & 92.6 & 94.0 & 91.5 & 93.5 & 86.4 \\
+YOLOv10n (NMS-free) & 2.78 & 6.8 & 11.5 & 87.0 & 94.8 & 92.2 & 94.1 & 87.3 \\
+YOLO11n & 2.59 & 6.5 & 12.8 & 78.1 & 96.0 & 94.1 & 95.9 & 89.5 \\
+Ghost-YOLOv8n & 2.73 & 6.1 & 11.9 & 84.0 & 94.2 & 91.8 & 93.8 & 86.9 \\
+Two-Stage (CLAHE + YOLOv8n) & 3.01 & 9.5 & 19.0 & 52.6 & 95.5 & 93.8 & 95.1 & 88.6 \\
+\textbf{IR-YOLOv8n (Ours)} & 3.01 & 8.3 & 14.8 & 67.5 & 97.5 & 95.8 & \textbf{97.4} & \textbf{91.8} \\
+\bottomrule
+\end{tabular}
+\end{table}

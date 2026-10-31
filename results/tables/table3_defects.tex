@@ -1,0 +1,21 @@
+\begin{table}[tb]
+\centering
+\caption{Tear Defect (torn) Detection: Sensitivity to Specular Glare Degradation.}
+\label{tab:defect_breakdown}
+\scriptsize
+\begin{tabular}{lccc}
+\toprule
+\textbf{Model} & \textbf{Torn mAP@50 (Neutral)} & \textbf{Torn mAP@50 (Glare)} & \textbf{$\Delta$ Degradation $\downarrow$} \\
+\midrule
+YOLOv5nu & 80.5 & 65.8 & 14.7 \\
+YOLOv8n & 85.0 & 71.5 & 13.5 \\
+YOLOv8s (Small) & 87.2 & 73.1 & 14.1 \\
+YOLOv9t (GELAN) & 82.5 & 69.0 & 13.5 \\
+YOLOv10n (NMS-free) & 83.8 & 70.5 & 13.3 \\
+YOLO11n & 87.5 & 74.2 & 13.3 \\
+Ghost-YOLOv8n & 83.0 & 69.8 & 13.2 \\
+Two-Stage (CLAHE + YOLOv8n) & 85.8 & 73.0 & 12.8 \\
+\textbf{IR-YOLOv8n (Ours)} & 93.1 & 88.2 & \textbf{4.9} \\
+\bottomrule
+\end{tabular}
+\end{table}
