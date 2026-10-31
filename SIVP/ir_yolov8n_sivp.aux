@@ -40,29 +40,33 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Proposed IR-YOLOv8n Architecture}{4}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Local Structural Gradient Energy Formulation}{4}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Illumination-Gated Attention (IGA) Mechanism}{4}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Tear defect (torn) detection degradation under specular glare blooming. IR-YOLOv8n sustains 67.96\% accuracy under blinding glare, exhibiting the lowest degradation drop ($\Delta = 6.43\%$) of all evaluated detectors.}}{5}{}\protected@file@percent }
-\newlabel{fig:tear_defect_robustness}{{3}{5}{}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comprehensive architecture of the proposed IR-YOLOv8n framework: (a) Macro-architecture featuring the lightweight backbone with integrated C2f-IGA stages, PAN-FPN neck, and multi-scale decoupled detection heads. (b) Micro-architectural topology of the C2f-IGA block. (c) Physics-inspired Illumination-Gated Attention (IGA) mechanism incorporating the Local Structural Gradient Energy operator $D(x) = |x - \text  {AvgPool}_{3\times 3}(x)|$ and learnable gating scale $\gamma $ to dynamically suppress specular reflection blooming while accentuating tear defect contours.}}{5}{}\protected@file@percent }
+\newlabel{fig:ir_yolo_architecture}{{3}{5}{}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Tear defect (torn) detection degradation under specular glare blooming. IR-YOLOv8n sustains 67.96\% accuracy under blinding glare, exhibiting the lowest degradation drop ($\Delta = 6.43\%$) of all evaluated detectors.}}{5}{}\protected@file@percent }
+\newlabel{fig:tear_defect_robustness}{{4}{5}{}{figure.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Optimization and Training Methodology}{5}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4}Evaluation Metrics and Edge Constraints}{5}{}\protected@file@percent }
 \newlabel{sec:metrics}{{4}{5}{}{section.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Radar profile illustrating multi-condition robustness across 6 operational regimes. IR-YOLOv8n envelopes all baseline architectures, demonstrating complete geometric resilience.}}{5}{}\protected@file@percent }
-\newlabel{fig:radar_profile}{{4}{5}{}{figure.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental Results and Discussion}{5}{}\protected@file@percent }
-\newlabel{sec:results}{{5}{5}{}{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Overall Efficiency and Detection Accuracy}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Environmental Robustness Breakdown}{5}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Comprehensive performance and efficiency benchmark across 9 lightweight architectures on the test dataset.}}{6}{}\protected@file@percent }
-\newlabel{tab:overall_performance}{{2}{6}{}{table.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Multi-condition environmental robustness breakdown: mAP@50 (\%) across 6 standardized operational regimes.}}{6}{}\protected@file@percent }
-\newlabel{tab:condition_breakdown}{{3}{6}{}{table.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Tear defect (torn) detection sensitivity to specular glare degradation.}}{6}{}\protected@file@percent }
-\newlabel{tab:defect_breakdown}{{4}{6}{}{table.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Radar profile illustrating multi-condition robustness across 6 operational regimes. IR-YOLOv8n envelopes all baseline architectures, demonstrating complete geometric resilience.}}{6}{}\protected@file@percent }
+\newlabel{fig:radar_profile}{{5}{6}{}{figure.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental Results and Discussion}{6}{}\protected@file@percent }
+\newlabel{sec:results}{{5}{6}{}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Overall Efficiency and Detection Accuracy}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Environmental Robustness Breakdown}{6}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Tear Defect Vulnerability under Specular Glare}{6}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Computational Cost and Edge Hardware Feasibility}{6}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Ablation Study: Validating the IGA Operator}{6}{}\protected@file@percent }
 \bibstyle{spmpsci}
 \bibdata{references}
 \bibcite{sivp2026reference}{1}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Comprehensive performance and efficiency benchmark across 9 lightweight architectures on the test dataset.}}{7}{}\protected@file@percent }
+\newlabel{tab:overall_performance}{{2}{7}{}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Multi-condition environmental robustness breakdown: mAP@50 (\%) across 6 standardized operational regimes.}}{7}{}\protected@file@percent }
+\newlabel{tab:condition_breakdown}{{3}{7}{}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Tear defect (torn) detection sensitivity to specular glare degradation.}}{7}{}\protected@file@percent }
+\newlabel{tab:defect_breakdown}{{4}{7}{}{table.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion and Future Work}{7}{}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{7}{}{section.6}{}}
 \bibcite{bopp2022banknote}{2}
 \bibcite{guo2020zero}{3}
 \bibcite{han2020ghostnet}{4}
@@ -75,6 +79,4 @@
 \bibcite{wang2024yolov9}{11}
 \bibcite{woo2018cbam}{12}
 \bibcite{zuiderveld1994contrast}{13}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion and Future Work}{7}{}\protected@file@percent }
-\newlabel{sec:conclusion}{{6}{7}{}{section.6}{}}
-\gdef \@abspage@last{7}
+\gdef \@abspage@last{8}

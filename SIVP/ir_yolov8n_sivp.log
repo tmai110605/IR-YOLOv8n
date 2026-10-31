@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.14)  31 OCT 2026 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.14)  31 OCT 2026 22:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -701,63 +701,74 @@ File: fig2_efficiency_pareto.png Graphic file (type png)
 <use fig2_efficiency_pareto.png>
 Package pdftex.def Info: fig2_efficiency_pareto.png  used on input line 136.
 (pdftex.def)             Requested size: 238.96417pt x 159.30878pt.
-<fig3_tear_defect_robustness.png, id=26, 578.16pt x 346.896pt>
+<fig_architecture.png, id=26, 1095.1314pt x 633.567pt>
+File: fig_architecture.png Graphic file (type png)
+<use fig_architecture.png>
+Package pdftex.def Info: fig_architecture.png  used on input line 157.
+(pdftex.def)             Requested size: 495.0pt x 286.36896pt.
+<fig3_tear_defect_robustness.png, id=27, 578.16pt x 346.896pt>
 File: fig3_tear_defect_robustness.png Graphic file (type png)
 <use fig3_tear_defect_robustness.png>
-Package pdftex.def Info: fig3_tear_defect_robustness.png  used on input line 17
-9.
+Package pdftex.def Info: fig3_tear_defect_robustness.png  used on input line 18
+6.
 (pdftex.def)             Requested size: 238.96417pt x 143.37689pt.
  [4 <./fig2_efficiency_pareto.png>]
-<fig4_radar_condition_profile.png, id=36, 505.89pt x 505.89pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./fig_architecture.png (PNG copy)> <./fig3_tear_defect_robustness.png>]
+<fig4_radar_condition_profile.png, id=43, 505.89pt x 505.89pt>
 File: fig4_radar_condition_profile.png Graphic file (type png)
 <use fig4_radar_condition_profile.png>
 Package pdftex.def Info: fig4_radar_condition_profile.png  used on input line 2
-77.
+84.
 (pdftex.def)             Requested size: 238.96417pt x 238.9648pt.
 
-Overfull \hbox (15.13902pt too wide) in paragraph at lines 286--287
+Overfull \hbox (15.13902pt too wide) in paragraph at lines 293--294
 \OT1/cmr/m/n/10 (-20) Table 2[] re-ports the quan-ti-ta-tive com-par-i-son of I
 R-YOLOv8n
  []
 
 
-Overfull \hbox (10.00513pt too wide) in paragraph at lines 286--287
+Overfull \hbox (10.00513pt too wide) in paragraph at lines 293--294
 \OT1/cmr/m/n/10 (-20) and out-per-form-ing mod-ern ar-chi-tec-tures such as YOL
 O11n
  []
 
 
-Overfull \hbox (5.21844pt too wide) in paragraph at lines 286--287
+Overfull \hbox (5.21844pt too wide) in paragraph at lines 293--294
 \OT1/cmr/m/n/10 (-20) IR-YOLOv8n sur-passes the sub-stan-tially larger YOLOv8s
  []
 
 
-Overfull \hbox (23.81075pt too wide) in paragraph at lines 289--290
+Overfull \hbox (23.81075pt too wide) in paragraph at lines 296--297
 \OT1/cmr/m/n/10 (-20) mod-els de-grade no-tice-ably un-der out-door shad-ows (Y
 OLOv8n:
  []
 
 
-Overfull \hbox (23.06136pt too wide) in paragraph at lines 289--290
+Overfull \hbox (23.06136pt too wide) in paragraph at lines 296--297
 \OT1/cmr/m/n/10 (-20) 97\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (-20) 84%$, YOLOv9t: 
 $96\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 (-20) 18%$) and strong back-light (YOLOv10
 n:
  []
 
-[5 <./fig3_tear_defect_robustness.png> <./fig4_radar_condition_profile.png>]
-Overfull \hbox (19.52072pt too wide) in paragraph at lines 301--302
+
+Underfull \vbox (badness 1024) has occurred while \output is active []
+
+ [6 <./fig4_radar_condition_profile.png>]
+Overfull \hbox (19.52072pt too wide) in paragraph at lines 308--309
 []\OT1/cmr/bx/n/10 (-20) YOLOv8n + Stan-dard Spa-tial At-ten-tion (CBAM):
  []
 
 
-Underfull \vbox (badness 2469) has occurred while \output is active []
-
- [6]
-Overfull \hbox (4.06346pt too wide) in paragraph at lines 319--320
+Overfull \hbox (4.06346pt too wide) in paragraph at lines 326--327
 \OT1/cmr/m/n/10 (-20) The VN-Polymer-Adverse bench-mark dataset and trained
  []
 
 (ir_yolov8n_sivp.bbl
+Underfull \vbox (badness 2409) has occurred while \output is active []
+
+ [7]
 Underfull \hbox (badness 10000) in paragraph at lines 32--34
 []\OT1/cmr/m/n/8.5 (+20) Jocher, G., Chaura-sia, A., Qiu, J.: Ul-
  []
@@ -767,20 +778,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--34
 \OT1/cmr/m/n/8.5 (+20) tr-a-lyt-ics yolov8.  GitHub repos-i-tory:
  []
 
-) [7] (ir_yolov8n_sivp.aux)
+) [8
+
+] (ir_yolov8n_sivp.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-08-10>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6019 strings out of 467440
- 94538 string characters out of 5407084
- 569017 words of memory out of 5000000
- 35056 multiletter control sequences out of 15000+600000
- 644844 words of font info for 189 fonts, out of 8000000 for 9000
+ 6037 strings out of 467440
+ 94864 string characters out of 5407084
+ 565885 words of memory out of 5000000
+ 35066 multiletter control sequences out of 15000+600000
+ 645055 words of font info for 193 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,65p,2662b,293s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,13n,65p,2662b,346s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbsy10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/typ
@@ -792,17 +805,19 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/User
 s/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 ><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmr10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr7.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lenovo/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Lenovo/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Lenov
-o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-
-Output written on ir_yolov8n_sivp.pdf (7 pages, 1352469 bytes).
+fonts/cm/cmr5.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lenovo/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Lenovo/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Lenovo/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
+s/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pf
+b><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on ir_yolov8n_sivp.pdf (8 pages, 2023276 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
+ 129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 30741 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 30746 words of extra memory for PDF output out of 35830 (max. 10000000)
 

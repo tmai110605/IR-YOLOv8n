@@ -150,7 +150,14 @@ I(u, v) = \min\left(I_{\text{max}}, \int_{\lambda} S(\lambda) L_{\text{total}}(u
 leading to clipping at $I_{\text{max}} = 255$, where local spatial gradient information $|\nabla I(u, v)| \to 0$.
 
 \subsection{Proposed IR-YOLOv8n Architecture}
-To combat reflection blooming without external latency overhead, we propose \textbf{IR-YOLOv8n}. The detector preserves the lightweight backbone and C2f feature aggregation modules of YOLOv8n while incorporating the \textbf{Illumination-Gated Attention (IGA)} mechanism.
+To combat reflection blooming without external latency overhead, we propose \textbf{IR-YOLOv8n}. The detector preserves the lightweight backbone and C2f feature aggregation modules of YOLOv8n while incorporating the \textbf{Illumination-Gated Attention (IGA)} mechanism directly into the backbone feature extraction hierarchy (as detailed in Fig.~\ref{fig:ir_yolo_architecture}).
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_architecture.png}
+\caption{Comprehensive architecture of the proposed IR-YOLOv8n framework: (a) Macro-architecture featuring the lightweight backbone with integrated C2f-IGA stages, PAN-FPN neck, and multi-scale decoupled detection heads. (b) Micro-architectural topology of the C2f-IGA block. (c) Physics-inspired Illumination-Gated Attention (IGA) mechanism incorporating the Local Structural Gradient Energy operator $D(x) = |x - \text{AvgPool}_{3\times 3}(x)|$ and learnable gating scale $\gamma$ to dynamically suppress specular reflection blooming while accentuating tear defect contours.}
+\label{fig:ir_yolo_architecture}
+\end{figure*}
 
 \subsubsection{Local Structural Gradient Energy Formulation}
 Given an intermediate feature tensor $x \in \mathbb{R}^{C \times H \times W}$, conventional attention modules apply global average pooling and max pooling. However, under specular saturation, max pooling merely selects saturated glare peaks. To overcome this, we define the \textbf{Local Structural Gradient Energy operator} $D(x)$:
