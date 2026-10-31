@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.14)  31 OCT 2026 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.14)  31 OCT 2026 23:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -766,7 +766,7 @@ Overfull \hbox (4.06346pt too wide) in paragraph at lines 326--327
  []
 
 (ir_yolov8n_sivp.bbl
-Underfull \vbox (badness 2409) has occurred while \output is active []
+Underfull \vbox (badness 2334) has occurred while \output is active []
 
  [7]
 Underfull \hbox (badness 10000) in paragraph at lines 32--34
@@ -815,7 +815,7 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
 s/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pf
 b><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
 mbols/msbm10.pfb>
-Output written on ir_yolov8n_sivp.pdf (8 pages, 2023276 bytes).
+Output written on ir_yolov8n_sivp.pdf (8 pages, 2015913 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

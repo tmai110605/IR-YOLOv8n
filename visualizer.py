@@ -114,17 +114,18 @@ def generate_tables(benchmark_results: Dict[str, Any], output_dir: str = "result
         r = benchmark_results[m]
         conds = r.get("conditions", {})
         indoor_map = conds.get("indoor", {}).get("mAP50", 100.0)
-        over_map = conds.get("overexposed", {}).get("mAP50", 0.0)
-        delta_drop = indoor_map - over_map
+        clean_torn = conds.get("torn_clean", {}).get("torn_mAP50", 0.0)
+        bright_torn = conds.get("torn_bright", {}).get("torn_mAP50", 0.0)
+        torn_drop = clean_torn - bright_torn
         row = {
             "Model": MODEL_DISPLAY.get(m, m),
             "Indoor": round(indoor_map, 2),
             "Outdoor": round(conds.get("outdoor", {}).get("mAP50", 0.0), 2),
             "Backlight": round(conds.get("backlight", {}).get("mAP50", 0.0), 2),
-            "Overexposed (Glare)": round(over_map, 2),
-            "Torn (Clean)": round(conds.get("torn_clean", {}).get("mAP50", 0.0), 2),
-            "Torn (Bright)": round(conds.get("torn_bright", {}).get("mAP50", 0.0), 2),
-            "Glare Drop (Δ)": round(delta_drop, 2)
+            "Overexposed (Glare)": round(conds.get("overexposed", {}).get("mAP50", 0.0), 2),
+            "Torn (Neutral)": round(clean_torn, 2),
+            "Torn (Glare)": round(bright_torn, 2),
+            "Torn Drop (Δ)": round(torn_drop, 2)
         }
         t2_rows.append(row)
     df2 = pd.DataFrame(t2_rows)
@@ -138,14 +139,14 @@ def generate_tables(benchmark_results: Dict[str, Any], output_dir: str = "result
 \scriptsize
 \begin{tabular}{lcccccc|c}
 \toprule
-\textbf{Model} & \textbf{Indoor} & \textbf{Outdoor} & \textbf{Backlight} & \textbf{Glare} & \textbf{Torn (Neutral)} & \textbf{Torn (Glare)} & \textbf{$\Delta$ Glare Drop $\downarrow$} \\
+\textbf{Model} & \textbf{Indoor} & \textbf{Outdoor} & \textbf{Backlight} & \textbf{Glare} & \textbf{Torn (Neutral)} & \textbf{Torn (Glare)} & \textbf{$\Delta$ Torn Drop $\downarrow$} \\
 \midrule
 """
     for row in t2_rows:
         is_ours = "(Ours)" in row["Model"]
         b_pre = r"\textbf{" if is_ours else ""
         b_post = r"}" if is_ours else ""
-        tex2 += f"{b_pre}{row['Model']}{b_post} & {row['Indoor']} & {row['Outdoor']} & {row['Backlight']} & {row['Overexposed (Glare)']} & {row['Torn (Clean)']} & {row['Torn (Bright)']} & {b_pre}{row['Glare Drop (Δ)']}{b_post} \\\\\n"
+        tex2 += f"{b_pre}{row['Model']}{b_post} & {row['Indoor']} & {row['Outdoor']} & {row['Backlight']} & {row['Overexposed (Glare)']} & {row['Torn (Neutral)']} & {row['Torn (Glare)']} & {b_pre}{row['Torn Drop (Δ)']}{b_post} \\\\\n"
     tex2 += r"""\bottomrule
 \end{tabular}
 \end{table}
@@ -201,13 +202,19 @@ def generate_figures(benchmark_results: Dict[str, Any], output_dir: str = "resul
     models = list(benchmark_results.keys())
     cond_keys = ["indoor", "outdoor", "backlight", "overexposed", "torn_clean", "torn_bright"]
 
+    def get_eval_val(model_key, cond_key):
+        cd = benchmark_results[model_key]["conditions"].get(cond_key, {})
+        if "torn" in cond_key:
+            return cd.get("torn_mAP50", cd.get("mAP50", 0.0))
+        return cd.get("mAP50", 0.0)
+
     # 1. FIGURE 1: GROUPED BAR CHART OF ROBUSTNESS ACROSS CONDITIONS
     fig, ax = plt.subplots(figsize=(10, 5.2), dpi=300)
     x = np.arange(len(cond_keys))
     width = 0.8 / len(models)
 
     for i, m in enumerate(models):
-        y_vals = [benchmark_results[m]["conditions"].get(c, {}).get("mAP50", 0.0) for c in cond_keys]
+        y_vals = [get_eval_val(m, c) for c in cond_keys]
         color = COLORS.get(m, "#333333")
         label = MODEL_DISPLAY.get(m, m)
         bars = ax.bar(x + (i - len(models)/2 + 0.5) * width, y_vals, width, label=label, color=color, edgecolor='black', linewidth=0.8, alpha=0.9)
@@ -223,7 +230,7 @@ def generate_figures(benchmark_results: Dict[str, Any], output_dir: str = "resul
     ax.set_title("Environmental Robustness: mAP@50 Comparison Across 6 Illumination Regimes", fontweight="bold", pad=12)
     ax.set_xticks(x)
     ax.set_xticklabels([COND_DISPLAY[c] for c in cond_keys], fontweight="bold")
-    ax.set_ylim(50, 105)
+    ax.set_ylim(40, 105)
     ax.grid(axis='y', linestyle='--', alpha=0.6)
     ax.legend(frameon=True, facecolor='white', edgecolor='#cccccc', loc='lower left')
     plt.tight_layout()
@@ -285,7 +292,7 @@ def generate_figures(benchmark_results: Dict[str, Any], output_dir: str = "resul
     angles += angles[:1]  # Close the radar loop
 
     for m in models:
-        values = [benchmark_results[m]["conditions"].get(c, {}).get("mAP50", 0.0) for c in cond_keys]
+        values = [get_eval_val(m, c) for c in cond_keys]
         values += values[:1]
         color = COLORS.get(m, "#333333")
         label = MODEL_DISPLAY.get(m, m)
@@ -296,7 +303,7 @@ def generate_figures(benchmark_results: Dict[str, Any], output_dir: str = "resul
     ax.set_theta_direction(-1)
     ax.set_xticks(angles[:-1])
     ax.set_xticklabels([COND_DISPLAY[c].replace('\n', ' ') for c in cond_keys], fontweight="bold", fontsize=9)
-    ax.set_ylim(60, 100)
+    ax.set_ylim(40, 100)
     ax.set_title("Multi-Condition Robustness Profile", fontweight="bold", pad=20)
     ax.legend(loc='upper right', bbox_to_anchor=(1.25, 1.1), frameon=True)
     plt.tight_layout()

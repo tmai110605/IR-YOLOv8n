@@ -105,17 +105,17 @@ where $\gamma$ is a learnable gating parameter initialized to $\gamma_0 = 0.05$ 
 ### Table 2: Robustness Across 6 Operational Regimes (mAP@50 %)
 *(Source: [`results/tables/table2_conditions.tex`](file:///f:/Cash/results/tables/table2_conditions.tex))*
 
-| Model | Indoor | Outdoor | Backlight | Glare | Torn (Neutral) | Torn (Glare) | $\Delta$ Glare Drop $\downarrow$ |
+| Model | Indoor | Outdoor | Backlight | Glare | Torn (Neutral) | Torn (Glare) | $\Delta$ Torn Drop $\downarrow$ |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Ghost-YOLOv8n | 99.50 | 94.52 | 93.28 | 93.28 | 93.80 | 90.50 | 6.22% |
-| YOLOv9t (GELAN) | 99.50 | 96.18 | 95.35 | 95.35 | 95.60 | 93.10 | 4.15% |
-| YOLOv10n (NMS-free) | 99.50 | 96.18 | 95.35 | 95.35 | 96.20 | 93.75 | 4.15% |
-| YOLOv5nu | 99.50 | 97.84 | 97.43 | 95.35 | 96.50 | 94.20 | 4.15% |
-| YOLO11n | 99.50 | 97.84 | 97.43 | 97.43 | 96.85 | 94.60 | 2.07% |
-| Two-Stage (CLAHE) | 99.50 | 97.84 | 97.43 | 97.43 | 97.27 | 94.85 | 2.07% |
-| YOLOv8n (Baseline) | 99.50 | 97.84 | 97.43 | 97.43 | 97.27 | 95.12 | 2.07% |
-| YOLOv8s (Small) | 99.50 | 99.50 | 98.96 | 98.96 | 98.89 | 97.94 | 0.54% |
-| **IR-YOLOv8n (Ours)** | **99.50** | **99.50** | **99.50** | **99.50** | **98.91** | **98.45** | **0.00%** |
+| Ghost-YOLOv8n | 99.50 | 94.52 | 93.28 | 93.28 | 50.32 | 43.81 | 6.51% |
+| YOLOv9t (GELAN) | 99.50 | 96.18 | 95.35 | 95.35 | 65.12 | 56.24 | 8.88% |
+| YOLOv10n (NMS-free) | 99.50 | 96.18 | 95.35 | 95.35 | 69.21 | 58.72 | 10.49% |
+| YOLOv5nu | 99.50 | 97.84 | 97.43 | 95.35 | 67.94 | 59.50 | 8.44% |
+| YOLO11n | 99.50 | 97.84 | 97.43 | 97.43 | 69.86 | 61.00 | 8.86% |
+| Two-Stage (CLAHE) | 99.50 | 97.84 | 97.43 | 97.43 | 70.82 | 61.46 | 9.36% |
+| YOLOv8n (Baseline) | 99.50 | 97.84 | 97.43 | 97.43 | 71.17 | 62.27 | 8.90% |
+| YOLOv8s (Small) | 99.50 | 99.50 | 98.96 | 98.96 | 73.54 | 66.25 | 7.29% |
+| **IR-YOLOv8n (Ours)** | **99.50** | **99.50** | **99.50** | **99.50** | **74.39** | **67.96** | **6.43%** |
 
 ### Table 3: Tear Defect Detection Degradation under Specular Glare
 *(Source: [`results/tables/table3_defects.tex`](file:///f:/Cash/results/tables/table3_defects.tex))*
@@ -154,3 +154,4 @@ where $\gamma$ is a learnable gating parameter initialized to $\gamma_0 = 0.05$ 
   - **No Host-Device Memory Ping-Pong:** Unlike Two-Stage CLAHE, IR-YOLOv8n requires 0 CPU preprocessing.
   - **Memory Footprint:** Weighs only 6.2 MB in FP16 precision, fitting directly into small L2/L3 on-chip caches.
   - **Latency:** 7.2 ms GPU latency allows high-speed sorting machines operating at up to 10–12 banknotes per second without buffering.
+
