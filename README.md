@@ -15,12 +15,6 @@ Official PyTorch implementation of **IR-YOLOv8n** with **Local-Contrast Gated At
   <img src="iryolov8n.png" alt="IR-YOLOv8n Architecture with C2f-IGA" width="95%">
 </p>
 
-IR-YOLOv8n incorporates **Illumination-Gated Attention (IGA)** into the feature aggregation neck (P3/8 and P4/16 heads) to distinguish smooth specular glare blooming from physical mechanical fractures (tears):
-
-- **Local Contrast Energy**: $D(x) = |x - \operatorname{AvgPool}_{3\times 3}(x)|$
-- **Signed Spatial Gate**: $w_s = \tanh(\operatorname{BN}(\operatorname{Conv}_{7\times 7}([\operatorname{Mean}(x), \operatorname{Max}(x), D(x)])))$
-- **Residual Integration**: $y = \operatorname{Conv}(x) + \gamma \cdot \operatorname{IGA}(\operatorname{Conv}(x))$ with learnable $\gamma_0 = 0.05$.
-
 ---
 
 ## Quick Start
