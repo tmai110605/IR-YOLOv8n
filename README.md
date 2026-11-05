@@ -24,7 +24,7 @@ Official PyTorch implementation of **IR-YOLOv8n** with **Local-Contrast Gated At
 Clone this repository and install dependencies:
 
 ```bash
-git clone https://github.com/<username>/IR-YOLOv8n.git
+git clone https://github.com/tmai110605/IR-YOLOv8n.git
 cd IR-YOLOv8n
 pip install -r requirements.txt
 ```
