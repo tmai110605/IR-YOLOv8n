@@ -110,16 +110,3 @@ This repository includes the complete empirical training run directory of IR-YOL
 
 ---
 
-## Citation
-
-If you find this work, pretrained models, or code useful for your research, please consider citing:
-
-```bibtex
-@article{mai2026polymer,
-  title={Polymer Banknote Recognition and Tear Detection under Adverse Illumination: A Benchmark and Local-Contrast Gated Attention},
-  author={Mai, Quoc Thai and Nguyen, Xuan Phi and Ho, Ngoc Tien and Nguyen, Huy Gia Toan},
-  journal={Pattern Recognition Letters},
-  year={2026},
-  note={Submitted}
-}
-```
