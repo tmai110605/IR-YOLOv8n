@@ -1,4 +1,4 @@
-# Polymer Banknote Recognition and Tear Detection under Adverse Illumination: A Benchmark and Local-Contrast Gated Attention
+# Polymer Banknote Recognition and Tear Detection under Adverse Illumination: A Dataset and Local-Contrast Gated Attention
 
 
 Official PyTorch implementation of **IR-YOLOv8n** with **Local-Contrast Gated Attention** for robust banknote recognition and defect detection under challenging illumination (specular glare, overexposure, harsh backlighting).
